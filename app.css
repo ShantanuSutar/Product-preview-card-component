@@ -22,6 +22,7 @@
 body {
     font-size: 14px;
     font-family: "Montserrat", sans-serif;
+    background-color: hsl(30, 38%, 92%);
 }
 
 button,
@@ -33,9 +34,33 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    color: hsl(212, 21%, 14%);
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+}
+
 h1,
 .price {
     font-family: "Fraunces", sans-serif;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+p {
+    color: hsl(228, 12%, 48%);
+    line-height: 1.8;
+}
+
+.container article:last-child {
+    background-color: white;
 }
 
 .attribution {
