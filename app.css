@@ -59,10 +59,11 @@ h1,
 
 h2 {
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: hsl(228, 12%, 48%);
     margin-bottom: 1rem;
+    letter-spacing: 0.2rem;
 }
 
 p {
@@ -71,7 +72,7 @@ p {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .container h1 {
@@ -139,8 +140,37 @@ p {
 .attribution {
     font-size: 14px;
     text-align: center;
+    margin-top: 2rem;
 }
 
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    .container article:first-child img {
+        border-radius: 0.625rem 0 0 0.625rem;
+        width: 100%;
+    }
+
+    .container article:last-child {
+        border-radius: 0 0.625rem 0.625rem 0;
+        margin-top: 0;
+        padding: 1.5rem 1.5rem 0;
+    }
+
+    picture img {
+        height: 100%;
+    }
+
+    .container p {
+        margin-bottom: 1rem;
+    }
+
 }
