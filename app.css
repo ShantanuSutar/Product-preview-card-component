@@ -105,6 +105,36 @@ p {
     margin-right: 1.5rem;
 }
 
+.container ul li:nth-child(2) {
+    color: hsl(228, 12%, 48%);
+}
+
+.container .btn {
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.625rem;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .btn:hover {
+    background-color: hsl(158, 58%, 15%);
+}
+
+
+.container .btn img {
+    margin-right: 0.5rem;
+}
 
 .attribution {
     font-size: 14px;
